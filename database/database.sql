@@ -1,0 +1,7 @@
+DROP DATABASE IF EXISTS linkbank;
+
+CREATE DATABASE linkbank;
+
+USE linkbank;
+
+CREATE TABLE user (username VARCHAR(10) PRIMARY KEY, passwordhash VARCHAR(40) NOT NULL, lastlogin TIMESTAMP DEFAULT NOW());
