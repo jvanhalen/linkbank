@@ -10,10 +10,13 @@ cd ~
 mkdir coding
 cd coding
 git clone https://github.com/jvanhalen/linkbank.git
+cd linkbank
 ```
 
 **Tietokannan luominen**
-aja projektihakemistossa komento `mysql -u root -p < database/database.sql`
+
+`mysql -u root -p < database/database.sql`
 
 **Sovelluksen käynnistäminen**
-projektihakemistossa `nodejs server.js` 
+
+`nodejs server.js` 
