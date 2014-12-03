@@ -30,6 +30,20 @@ io.on('connection', function(socket){
     // Do a SQL query
     database.register(msg.username, msg.password, socket);
   });
+
+  socket.on('add link', function(msg){
+    console.log('message: ' + msg);
+    msg = JSON.parse(msg);
+    // Do a SQL query
+    database.addlink(msg.link, msg.description, socket);
+  });
+
+  socket.on('search', function(msg){
+    console.log('message: ' + msg);
+    msg = JSON.parse(msg);
+    // Do a SQL query
+    database.search(msg.word, socket);
+  });
 });
 
 http.listen(3000, function(){
