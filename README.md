@@ -19,4 +19,7 @@ cd linkbank
 
 **Sovelluksen käynnistäminen**
 
-`nodejs server.js` 
+```bash
+npm install
+nodejs server.js
+``` 
