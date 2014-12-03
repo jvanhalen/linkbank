@@ -13,8 +13,12 @@ git clone https://github.com/jvanhalen/linkbank.git
 cd linkbank
 ```
 
-**Tietokannan luominen**
+**MySQL-tietokannan asentaminen**
 
+`sudo apt-get install mysql-server`
+
+**Tietokannan luominen**
+ 
 `mysql -u root -p < database/database.sql`
 
 **Sovelluksen käynnistäminen**
