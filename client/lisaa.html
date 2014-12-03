@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <title>TiKo Hakukone</title>
+  <meta charset="UTF-8">
+  <link href="tyylilahde.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Tähän tulee navigaatio sivulle -->
+  <div id="navigaattori">
+
+    <div id="navigaatio">
+
+      <!-- Etusivu -->
+      <li><a href="index.html">Etusivu</a></li>
+      <!-- Haku -->
+      <li><a href="haku.html">Haku</a></li>
+      <!-- Lisää -->
+      <li><a href="lisaa.html">Lisää</a></li>
+
+<!--                                         Kirjautuminen / rekisteröinti 
+
+<li><a href="login.html">Kirjaudu</a></li>
+
+-->
+</div>
+<form action="">
+  <input id="username" placeholder="Käyttäjätunnus" autocomplete="off" />
+  <input id="password" placeholder="Salasana" autocomplete="off" />
+  <button id="login">Kirjaudu</button>
+  <button id="register">Rekisteröidy</button>
+</form>
+</div>
+
+<!-- Tänne tulee sivuston sisältöä, esimerkiksi kavija_maara_tanaan -->
+<div id="sisalto">
+  <!-- Tämä tarvitaan, jotta saadaan sisennettyä sisaltoa ilman, että se vaikuttaa sivun muotoiluun -->
+  <div id="sisalto_wrap">
+
+    <!-- Kamaa tänne! -->
+    <div id="vasen_boksi_lisaa">
+
+      <!-- Vaihda action attribuutti jos tarpeen -->
+      <form action="">
+        <input class="pitkä" id="linkki_url_js" type="url" placeholder="Linkki" name="url_js" />
+        <br>
+        <br>
+        <input class="pitkä" id="nimi_url_js" type="text" placeholder="Nimimerkki" name="nimi_url_js" />
+        <br>
+        <br>
+        <textarea placeholder="Syötä tähän tietoa linkistä" id="tieto_url_js" rows="3"></textarea>
+        <br>
+        <br>
+        Kategoria<br>
+        <input id="haku_kategoria_tiko" type="checkbox" value="Tietojenkäsittely">Tietojenkäsittely
+        <input id="haku_kategoria_hoitsu" type="checkbox" value="Terveys">Terveys
+        <br>
+        <br>
+        <button id="send_url" type="submit">Lähetä</button>
+      </form>
+
+    </div>
+
+    <div id="oikea_boksi_lisaa">
+      <h3>Linkkien lisääminen järjestelmäämme</h3>
+      <p>Tämän websovelluksen avulla voit lisätä järjestelmäämme linkkejä, jotka ovat hyödyllisiä niin töissä että opiskelussa.</p>
+      <p>Järjestelmä poistaa automaattisesti linkit, jotka ovat saaneet negatiivista palautetta. Tämä toimenpide vaatii 5 negatiivista ääntä. 
+        Haitalliset sekä lakia noudattamattomat linkit poistaa ylläpito. Järjestelmämme tietää lähettäjän IP-osoitteen, jonka voimme
+        tarpeentullen jakaa poliisin kanssa.</p>
+        <p>Kiitos kun käytät sovellusta rehellisesti!</p>
+        <p>Terveisin Ylläpito, LTDNS14</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

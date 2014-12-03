@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+  <title>TiKo Hakukone</title>
+  <meta charset="UTF-8">
+  <link href="tyylilahde.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Tähän tulee navigaatio sivulle -->
+  <div id="navigaattori">
+
+    <div id="navigaatio">
+
+      <!-- Etusivu -->
+      <li><a href="index.html">Etusivu</a></li>
+      <!-- Haku -->
+      <li><a href="haku.html">Haku</a></li>
+      <!-- Lisää -->
+      <li><a href="lisaa.html">Lisää</a></li>
+
+<!--                                         Kirjautuminen / rekisteröinti 
+
+<li><a href="login.html">Kirjaudu</a></li>
+
+-->
+</div>
+<form action="">
+  <input id="username" placeholder="Käyttäjätunnus" autocomplete="off" />
+  <input id="password" placeholder="Salasana" autocomplete="off" />
+  <button id="login">Kirjaudu</button>
+  <button id="register">Rekisteröidy</button>
+</form>
+</div>
+
+<!-- Tänne tulee sivuston sisältöä, esimerkiksi kavija_maara_tanaan -->
+<div id="sisalto">
+
+  <!-- Vasemman puolen hakulaatikko -->
+  <div id="vasen_boksi">
+    <!-- Muuta attribuutin arvo jos tarpeen -->
+    <form action="">
+      <input id="haku_rivi" type="text" placeholder="Syötä hakusana">
+      <br>
+      <br>
+      Kategoriat<br>
+      <input id="haku_kategoria_tiko" type="checkbox" value="Tietojenkäsittely">Tietojenkäsittely
+      <input id="haku_kategoria_hoitsu" type="checkbox" value="Terveys">Terveys
+      <br>
+      <br>
+      <button id="hae_url" type="submit">Hae</button>
+    </form>
+    <br>
+
+    <!-- JOS linkkejä löytyy, niin tämä näytetään -->
+
+    <div id="linkkeja_yht">                        <!-- top_linkit = suosituimmat linkit, JavaScript hoitaa tuohon tiedon -->
+      <span>Linkkejä löytyi: </span><span id="top_linkit">koodi tähän</span>
+    </div>
+
+  </div>
+
+  <!-- Oikean puolen hakutuloslaatikko -->
+  <div id="oikea_boksi">
+
+    <!-- Säädetään hakutuloksen sisennystä -->
+    <div id="oikea_boksi_wrap">
+
+      <!-- Tähän tulee haun tuloslaatikot -->
+
+      <!-- START hakutulos // Tästä alkaa hakutulos // JavaScript hoitaa tämän tulostuksen? -->
+      <div class="hakutulos">
+
+        <table id="hakutulos_table">
+
+          <!-- Tykkään ja ei tykkää napit -->
+          <tr>
+            <!-- JOS käyttäjä painaa thumbs-up painiketta, hän antaa positiivisen äänen -->
+            <td rowspan="4" width="50px">
+              <button id="tykkaan"><i class="fa fa-thumbs-up"></i></button>
+              <br>
+              <br>
+              <button id="entykkaa"><i class="fa fa-thumbs-down"></i></button>
+            </td>
+          </tr>
+
+          <!-- Hakutuloksen nimi ja linkki -->
+          <tr>
+            <td id="hakutulos_linkki"><a href="https://esimerkkilinkki.com/opinnayte_pohja.pdf">https://esimerkkilinkki.com/opinnayte_pohja.pdf</a></td>
+          </tr>
+
+          <!-- Hakutuloksen seloste -->
+          <tr>
+            <td colspan="2" id="hakutulos_tieto">Tämä tekstikenttä kopioituu niin monta kertaa, kuin hakutuloksia on. Tätä div laatikkoa pystyy scrollaamaan alaspäin jos vain tuloksia on niin monta. Yksi hakutulos-laatikko on venyvä korkeudeltaan, eli "info" tekstiä voidaan laittaa niin paljon kuin on tarpeen.</td>
+          </tr>
+
+          <!-- Tietoa hakutuloksesta -->
+          <tr>
+            <td colspan="2"><span>Lisännyt: </span><span id="linkki_lisannyt">Koodi tähän</span>
+              <span>Plussat: </span>
+              <span id="linkki_plussat">Koodi tähän</span>
+              <span>Miinukset: </span><span id="linkk_plussat">Koodi tähän</span>
+            </td>
+          </tr>
+
+        </table>
+      </div>
+      <hr>
+      <!-- END hakutulos -->
+
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

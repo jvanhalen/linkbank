@@ -1,22 +1,67 @@
-
 <!doctype html>
 <html>
 <head>
-
+  <title>TiKo Hakukone</title>
+  <meta charset="UTF-8">
+  <link href="tyylilahde.css" media="screen" rel="stylesheet" type="text/css" />
+  <link  href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
   <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
   <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha1.js"></script>
-  
-  <title>Tikon linkkipankki</title>
 </head>
 <body>
-  <form action="">
-    <input id="username" placeholder="username" autocomplete="off" />
-    <input id="password" type="password" placeholder="password" autocomplete="off" />
-    <button id="login">Login</button>
-    <button id="register">Register</button>
-  </form>
 
-  <script src="./client/functions.js"></script>
+
+  <!-- Tähän tulee navigaatio sivulle -->
+  <div id="navigaattori">
+    <div id="navigaatio">
+      <!-- Etusivu -->
+      <li><a href="index.html">Etusivu</a></li>
+      <!-- Haku -->
+      <li><a href="haku.html">Haku</a></li>
+      <!-- Lisää -->
+      <li><a href="lisaa.html">Lisää</a></li>
+
+<!--Kirjautuminen / rekisteröinti 
+<li><a href="login.html">Kirjaudu</a></li>
+-->
+</div>
+<form action="">
+  <input id="username" placeholder="Käyttäjätunnus" autocomplete="off" />
+  <input id="password" placeholder="Salasana" autocomplete="off" />
+  <button id="login">Kirjaudu</button>
+  <button id="register">Rekisteröidy</button>
+</form>
+</div>
+
+<!-- Tänne tulee sivuston sisältöä, esimerkiksi kavija_maara_tanaan -->
+<div id="sisalto">
+  <!-- Tämä tarvitaan, jotta saadaan sisennettyä sisaltoa ilman, että  se vaikuttaa sivun muotoiluun -->
+  <div id="sisalto_wrap">
+    <!-- Kuinka monta linkkiä sivulta löytyy -->
+    <div id="linkkeja_yht">                        <!-- top_linkit  = suosituimmat linkit, JavaScript hoitaa tuohon tiedon -->
+      <span>Linkkejä yhteensä: </span><span  id="top_linkit">koodi tähän</span>
+    </div>
+    <!-- Kävijämäärä tämän päivän aikana -->
+    <div id="kavijamaara_tanaan"> <!--  top_kavi_tn = kävijöitä tänään, JavaScript hoitaa tuohon tiedon -->
+      <span>Tänään sivustoa katsottu: </span><span  id="top_kavi_tn">koodi tähän</span>
+    </div>
+    <!-- Kävijämäärä kuukauden aikana -->
+    <div id="kavijamaara_kuukaudessa"> <!--  top_kavi_kk = kävijöitä kuukaudessa, JavaScript hoitaa tuohon tiedon  -->
+      <span>Kuukaudessa sivustoa katsottu: </span><span  id="top_kavi_kk">koodi tähän</span>
+    </div>
+    <!-- Käyttäjien määrä yhteensä -->
+    <div id="kayttajia"> <!--  kayttaja_maara = rekisteröityneitä käyttäjiä, JavaScript hoitaa tuohon  tiedon -->
+      <span>Käyttäjiä sivustolla: </span><span  id="kayttaja_maara">koodi tähän</span>
+    </div>        
+    <!-- Suosituimmat kategoriat -->
+    <div id="suosituimmat_kateg"> <!--  top_kateg = haetuimmat kategoriat, JavaScript hoitaa tuohon tiedon  -->
+      <span>Suosituimmat kategoriat: </span><span id="top_kateg">koodi tähän</span>
+    </div>
+  </div>
+
+</div>
+<script src="./client/functions.js"></script>
+
 </body>
 </html>

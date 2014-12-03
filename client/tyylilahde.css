@@ -1,0 +1,113 @@
+html {
+  font-size:100%;
+  overflow:hidden;
+}
+body {
+  width:auto;
+  margin:0 auto;
+  background-color:#121212;
+  color:white;
+  font-family:Arial;
+}
+hr {
+  border-style:dotted none none none;
+  border-width:1px;
+}
+a {
+  color:cyan;
+}
+textarea {
+  resize:none;
+  width:100%;
+}
+.pitkä {
+  width:100%;
+}
+#navigaattori {
+  width:100%;
+  height:40px;
+  background-color:#30aa00;
+  color:white;
+}
+#navigaatio, #navigaatio li, #navigaatio li a:visited {
+  float:left;
+  list-style:none;
+  font-family:Calibri;
+  text-transform:uppercase;
+  padding:5px 10px 5px 10px;
+  color:white;
+}
+#navigaatio li a:active {
+  color:cyan;
+}
+#sisalto {
+  position:absolute;
+  max-width:100%;
+  width:auto;
+  max-height:949px;
+  height:auto;
+}
+#sisalto_wrap {
+  padding:20px;
+}
+#linkkeja_yht, #kavijamaara_tanaan {
+  position:relative;
+}
+#linkkeja_yht {
+}
+#kavijamaara_tanaan {
+}
+#kavijamaara_kuukaudessa {
+}
+#kayttajia {
+}
+#suosituimmat_kateg {
+}
+/* HAKU SIVU */
+#vasen_boksi, #oikea_boksi {
+}
+#vasen_boksi {
+  float:left;
+  width:auto;
+  max-width:400px;
+  background-color:#393939;
+  max-height:892px;
+  height:auto;
+  padding:10px;
+}
+#oikea_boksi {
+  float:right;
+  max-width:1500px;
+  height:auto;
+  max-height:950px;
+  overflow-y:auto;
+}
+#oikea_boksi_wrap {
+  padding:20px;
+}
+#hakutulos_table {
+  padding:10px;
+}
+.hakutulos {
+  height:auto;
+  background-color:#314441;
+  color:white;
+  border-radius:5px;
+}
+#haku_rivi {
+  width:390px;
+  text-align:center;
+}
+/* LISÄÄ SIVU */
+#vasen_boksi_lisaa {
+  padding:20px;
+  float:left;
+  width:400px;
+}
+#oikea_boksi_lisaa {
+  padding:0 0 0 20px;
+  float:right;
+  width:auto;
+  max-width:500px;
+  height:auto;
+}

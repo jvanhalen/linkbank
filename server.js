@@ -7,10 +7,10 @@ var port = 3000;
 var Database = require('./database/database');
 var database = new Database();
 
-app.use(express.static(__dirname + '/'));
+app.use(express.static(__dirname + '/client'));
 
 app.get('/', function(req, res){
-  res.sendFile(__dirname + '/client/index.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 io.on('connection', function(socket){
